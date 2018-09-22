@@ -33,8 +33,15 @@ end
 def hit?(card_total)
   if prompt_user = 's'
     get_user_input.gets.chomp
+  elsif prompt_user = 'h'
+    deal_card
+  else
+    invalid_command
+    prompt_user
+    
 end
 end
+
 def invalid_command
   puts "Please enter a valid command"
 end
