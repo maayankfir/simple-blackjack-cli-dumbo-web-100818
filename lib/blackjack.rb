@@ -31,7 +31,8 @@ card_total
 end
 
 def hit?(card_total)
-  # code hit? here
+  if prompt_user = 's'
+    get_user_input.gets.chomp
 end
 
 def invalid_command
