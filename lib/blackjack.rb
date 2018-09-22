@@ -25,8 +25,8 @@ end
 def initial_round
 first_round = deal_card
 second_round = deal_card
-sum = first_round + second_round
-puts sum
+card_total = first_round + second_round
+puts "Your cards add up to #{card_total}"
 end
 
 def hit?
